@@ -16,7 +16,7 @@
   "name": "my-webpack-project",
   "description": "My webpack project",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production --node-env=production",
