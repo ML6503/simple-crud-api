@@ -37,6 +37,7 @@
   },
   "homepage": "https://github.com/ML6503/simple-crud-api#readme",
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "uuid": "^8.3.2"
   }
 }
