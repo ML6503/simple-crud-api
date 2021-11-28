@@ -8,16 +8,6 @@ jest.mock('../db.json');
 const PORT = process.env.PORT || 3000;
 
 describe('GET /person', function () {
-  // request = request(`http://localhost:${PORT}`);
-  // // req.person = personsDb.persons;
-  // request.get('/person').expect(200, function (err) {
-  //     console.log(err);
-  // });
-
-  // request.get('/person').expect(personsDb.persons, function (err) {
-  //     console.log(err);
-  // });
-
   const personsStringify = JSON.stringify(personsDb.persons);
   const serverTest = createServer((_, response) => {
     response.end(personsStringify);
