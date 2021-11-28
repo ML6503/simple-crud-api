@@ -15,35 +15,35 @@ const PORT = process.env.PORT || 3000;
 const server = http.createServer();
 
 server.on('request', (req, res) => {
-    req.person = personsDb.persons;
-    // add query
-    req.query = new URL(req.url, `http://${req.headers.host}`);
+  req.person = personsDb.persons;
+  // add query
+  req.query = new URL(req.url, `http://${req.headers.host}`);
 
-    switch (req.method) {
-        case 'GET':
-            getData(req, res, get);
-            break;
+  switch (req.method) {
+    case 'GET':
+      getData(req, res, get);
+      break;
 
-        case 'POST':
-            getData(req, res, post);
-            break;
+    case 'POST':
+      getData(req, res, post);
+      break;
 
-        case 'PUT':
-            getData(req, res, put);
-            break;
+    case 'PUT':
+      getData(req, res, put);
+      break;
 
-        case 'DELETE':
-            getData(req, res, deleteReq);
-            break;
+    case 'DELETE':
+      getData(req, res, deleteReq);
+      break;
 
-        default:
-            // response for requests with no other response
-            response.statusCode = 400;
-            response.write('No Response');
-            response.end();
-    }
+    default:
+      // response for requests with no other response
+      response.statusCode = 400;
+      response.write('No Response');
+      response.end();
+  }
 });
 
 server.listen(PORT, (err) => {
-    err ? console.error(err) : console.log(`listening on port ${PORT}`);
+  err ? console.error(err) : console.log(`listening on port ${PORT}`);
 });
