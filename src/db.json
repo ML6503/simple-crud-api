@@ -1,10 +1,10 @@
 {
-  "persons": [
-    {
-      "id": "a24a6ea4-ce75-4665-a070-57453082c256",
-      "name": "",
-      "age": null,
-      "hobbies": ""
-    }
-  ]
+    "persons": [
+        {
+            "id": "a24a6ea4-ce75-4665-a070-57453082c256",
+            "name": "Mitya",
+            "age": 38,
+            "hobbies": []
+        }
+    ]
 }
